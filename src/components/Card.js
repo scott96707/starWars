@@ -27,7 +27,6 @@ class Card extends Component {
         } else {
             return (
             <div className='tc bg-light-blue dib br3 pa3 ma2 grow bw2 shadow-5' onClick={this.flipCard} >
-            <img alt='robot' src={yavin} width="200" height="200"/>
             <div>
                 <h2>{this.props.name}</h2>
                 <p>Climate: {this.props.climate}</p>
