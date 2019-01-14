@@ -1,16 +1,19 @@
 import React from "react";
 import Card from './Card';
 
-const CardList = ({ robots }) => {
+const CardList = ({ planets }) => {
+
     return (
-        <div>
-            {robots.map((user, i) => {
+        <div className="ma4">
+            {planets.map((entry, i) => {
                 return (
                     <Card
                         key={i}
-                        id={robots[i].id}
-                        name={robots[i].name}
-                        email={robots[i].email}
+                        orbital_period={planets[i].orbital_period}
+                        name={planets[i].name}
+                        climate={planets[i].climate}
+                        rotation_period={planets[i].rotation_period}
+                        diameter={planets[i].diameter}
                     />
                 );
             })}
