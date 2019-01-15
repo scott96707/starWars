@@ -4,7 +4,7 @@ import Card from './Card';
 const CardList = ({ planets }) => {
 
     return (
-        <div className="ma4">
+        <div >
             {planets.map((entry, i) => {
                 return (
                     <Card
