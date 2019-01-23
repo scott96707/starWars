@@ -1,10 +1,11 @@
 import React from "react";
 import Card from './Card';
+import './Cardlist.css';
 
 const CardList = ({ planets }) => {
 
     return (
-        <div >
+        <div className='cardlist--flex' >
             {planets.map((entry, i) => {
                 return (
                     <Card
