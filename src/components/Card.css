@@ -1,0 +1,24 @@
+.flipper {
+    position: relative;
+    transform: rotateY(180deg);
+}
+
+.cards {
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.cardFront, .cardBack {
+    position: absolute;
+    transform: rotateY(0deg);
+}
+
+.cardFront {
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    z-index: 1;
+}
+
+.cardBack {
+    transform: rotateY(180deg);
+}
