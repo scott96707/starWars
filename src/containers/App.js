@@ -1,7 +1,51 @@
 import React, { Component } from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
+import Particles from 'react-particles-js';
 import './App.css';
+
+const particlesOptions ={
+    "particles": {
+        "number": {
+            "value": 60,
+            "density": {
+                "enable": true,
+                "value_area": 1000
+            }
+        },
+        
+        "line_linked": {
+            "enable": false
+        },
+        "move": {
+            "speed": 0
+        },
+        "size": {
+            "value": 1.75
+        },
+        "opacity": {
+            "anim": {
+                "enable": true,
+                "speed": 1,
+                "opacity_min": 0.05
+            }
+        },
+    },
+
+    "interactivity": {
+        "events": {
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            }
+        },
+        "modes": {
+            "push": {
+                "particles_nb": 1
+            }
+        }
+    },
+}
 
 class App extends Component {
     constructor() {
@@ -21,7 +65,7 @@ class App extends Component {
     onSearchChange = (event) => {
         this.setState({ searchfield: event.target.value });
     }
-
+        
     render() {
         const { planets, searchfield } = this.state;
         const filteredPlanets = planets.filter(planet => {
@@ -30,6 +74,7 @@ class App extends Component {
         return !planets.length ? <h1>Loading Planets</h1> :
         (
             <div className="tc">
+            <Particles className="particles" params={particlesOptions} />
                 <h1 className='f1'> Star Tours </h1>
                 <SearchBox searchChange={this.onSearchChange}/>
                 <CardList planets={filteredPlanets} />
