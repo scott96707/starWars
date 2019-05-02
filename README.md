@@ -1,4 +1,8 @@
-Front-end created with React.
+#Created with React.
 
-To use:
-Clone this directory locally and run npm install, npm start.
+##What this is:
+A list of cards displaying information from the Star Wars universe.
+Mouse-over a card to see more information.
+
+##See it live at:
+**[link]https://starwarscards.herokuapp.com/**

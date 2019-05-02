@@ -13,7 +13,6 @@ const particlesOptions ={
                 "value_area": 1000
             }
         },
-        
         "line_linked": {
             "enable": false
         },
@@ -31,7 +30,6 @@ const particlesOptions ={
             }
         },
     },
-
     "interactivity": {
         "events": {
             "onclick": {
@@ -71,15 +69,20 @@ class App extends Component {
         const filteredPlanets = planets.filter(planet => {
             return planet.name.toLowerCase().includes(searchfield.toLowerCase());
         })
+
         return !planets.length ? <h1>Loading Planets</h1> :
-        (
-            <div className="tc">
-            <Particles className="particles" params={particlesOptions} />
-                <h1 className='f1'> Star Tours </h1>
-                <SearchBox searchChange={this.onSearchChange}/>
-                <CardList planets={filteredPlanets} />
-            </div>
-        )
+            (
+                <div className="tc">
+                <Particles className="particles" params={particlesOptions} />
+                    <h1 className='f1'> Star Tours </h1>
+                    <SearchBox searchChange={this.onSearchChange}/>
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                        <button type="button">Planets!</button>
+                        <button type="button">People!</button>
+                    </div>
+                    <CardList planets={filteredPlanets} />
+                </div>
+            )
     }
 }
 
