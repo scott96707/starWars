@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import './Card.css';
 
 const Card = ({ name, image, climate, rotation_period, orbital_period, diameter }) => {
