@@ -76,10 +76,10 @@ class App extends Component {
                 <Particles className="particles" params={particlesOptions} />
                     <h1 className='f1'> Star Tours </h1>
                     <SearchBox searchChange={this.onSearchChange}/>
-                    <div style={{ display: "flex", justifyContent: "center" }}>
+                    {/* <div style={{ display: "flex", justifyContent: "center" }}>
                         <button type="button">Planets!</button>
                         <button type="button">People!</button>
-                    </div>
+                    </div> */}
                     <CardList planets={filteredPlanets} />
                 </div>
             )
