@@ -55,7 +55,7 @@ class App extends Component {
     }
 
     async componentDidMount() {
-            const resp = await fetch("https://swapi.co/api/planets/");
+        const resp = await fetch("https://swapi.dev/api/planets/");
             const data = await resp.json();
             this.setState({ planets: data.results });
     }
