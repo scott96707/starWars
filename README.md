@@ -1,8 +1,9 @@
 # Simple React Project
 
 ## What this is:
-A list of cards displaying information from the Star Wars universe.
-Mouse-over a card to see more information.
+A list of cards displaying information from the Star Wars universe.  
+Mouse-over a card to see more information on planets.  
+(This is just a fun little project)
 
 ## Dependencies
 1. react
