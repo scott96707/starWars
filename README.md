@@ -10,9 +10,9 @@ react-particles-js
 tachyons
 
 ## To run locally,
-$ git clone https://github.com/scott96707/starWars.git
-$ npm install
+$ git clone https://github.com/scott96707/starWars.git\
+$ npm install\
 $ npm run-script dev
 
 ## See it live at:
-[Heroku Deployment] (https://starwarscards.herokuapp.com/)
+[Heroku Deployment](https://starwarscards.herokuapp.com/)
