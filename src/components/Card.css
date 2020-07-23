@@ -1,4 +1,5 @@
 .flip-card {
+    flex: 1 0 20%;
     background-color: transparent;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     -webkit-perspective: 1000px;
